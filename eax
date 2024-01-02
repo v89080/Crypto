@@ -1,0 +1,6 @@
+function start() {
+  let webAppUrl = 'https://script.google.com/macros/s/.../exec';
+  let url = `https://api.telegram.org/bot${token}/setWebhook?url=${webAppUrl}`;
+  let resp = UrlFetchApp.fetch(url);
+  console.log(resp.getContentText());
+}
